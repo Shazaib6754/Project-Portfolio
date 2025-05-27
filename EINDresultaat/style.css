@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f0f0f0;
+}
+
+header {
+  background-color: #d9b99b;
+  color: white;
+  padding: 3rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  background-color: white;
+
+  /* CSS Grid Layout */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Sectie opmaak */
+section {
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+section h3, section h4, section h5 {
+  color: #555;
+}
+
+section p {
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+/* Lijsten */
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Afbeeldingen */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #d9b99b;
+  color: white;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: repeat(2, 1fr); /* Twee kolommen op grotere schermen */
+  }
+
+  nav ul {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr); /* Drie kolommen op brede schermen */
+  }
+}
+
+  
+  
